@@ -37,7 +37,7 @@ public class Pessoa {
     @Column(name = "nome", nullable = false)
     private String nome;
 
-    @Column(name = "cpf", length = 14)
+    @Column(name = "cpf")
     private String cpf;
 
     @Column(name = "rg")
@@ -47,7 +47,7 @@ public class Pessoa {
     private LocalDate dataNasc;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "sexo", length = 1)
+    @Column(name = "sexo")
     private TipoSexo sexo;
 
     @Column(name = "email")
