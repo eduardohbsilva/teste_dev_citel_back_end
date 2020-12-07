@@ -2,6 +2,7 @@ package br.com.citel.teste.model;
 
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
@@ -259,7 +260,7 @@ public class Pessoa {
 	}
 	
 	public BigDecimal calculateImc() {
-		return peso.divide(altura.multiply(altura));
+		return peso.divide(altura.multiply(altura), 2, RoundingMode.HALF_UP);
 	}
 	
 	public Integer calculateAge() {
