@@ -330,7 +330,7 @@ public class PessoaDTO {
 
 	public void setCelular(String celular) {
 		this.celular = celular;
-		this.telefones.add(new TelefoneDTO(telefoneFixo, TipoTelefone.CELULAR));
+		this.telefones.add(new TelefoneDTO(celular, TipoTelefone.CELULAR));
 	}
 
 	public String getCep() {
